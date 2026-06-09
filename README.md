@@ -1,1 +1,1 @@
-This plugin is a extension or polylang plugin for WordPress. If it is installed, you could automatically send request via API to MyMemory (https://translated.com) and make a one click translation up to 500 Chars/day or if you registrered up to 10000 chars per day for free
+This plugin is a extension or Polylang plugin (https://polylang.pro) for WordPress. If it is installed, you could automatically send request via API to MyMemory (https://translated.com) and make a one click translation up to 500 Chars/day or if you registrered up to 10000 chars per day for free
