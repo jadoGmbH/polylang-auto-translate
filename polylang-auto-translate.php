@@ -5,7 +5,10 @@
  * Version: 1.3.2
  * Author: jado GmbH
  * Author URI: https://www.ja.do/
-*/
+ * License: GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: polylang-auto-translate
+ */
 
 if (!defined('ABSPATH')) exit;
 

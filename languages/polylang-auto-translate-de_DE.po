@@ -1,0 +1,64 @@
+# Copyright (C) 2026 jado GmbH
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Polylang Auto Translator 1.3.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/polylang-auto-translate\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-10T15:25:00+00:00\n"
+"PO-Revision-Date: 2026-06-10 15:26+0000\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: polylang-auto-translate\n"
+
+#. Plugin Name of the plugin
+#: polylang-auto-translate.php
+msgid "Polylang Auto Translator"
+msgstr "Polylang Auto-Übersetzer"
+
+#. Description of the plugin
+#: polylang-auto-translate.php
+msgid "Translates content from the original language text using MyMemory/translated.com while preserving the Gutenberg structure."
+msgstr "Übersetzt Inhalte aus dem Originaltext unter Verwendung von MyMemory/translated.com unter Beibehaltung der Gutenberg-Struktur."
+
+#. Author of the plugin
+#: polylang-auto-translate.php
+msgid "jado GmbH"
+msgstr "jado GmbH"
+
+#: polylang-auto-translate.php:35
+msgid "Polylang Auto Translator requires the Polylang plugin to be installed and active."
+msgstr "Polylang Auto Translator erfordert die Installation und Aktivierung des Polylang-Plugins."
+
+#: polylang-auto-translate.php:42
+#: polylang-auto-translate.php:58
+msgid "Polylang Auto Translate Settings"
+msgstr "Polylang Auto-Übersetzung Einstellungen"
+
+#: polylang-auto-translate.php:43
+msgid "Polylang Auto Translate"
+msgstr "Polylang Auto-Übersetzung"
+
+#: polylang-auto-translate.php:66
+msgid "MyMemory/translated.com Email"
+msgstr "MyMemory/translated.com E-Mail"
+
+#: polylang-auto-translate.php:69
+msgid "Enter your email address to increase the daily limit from 500 to 10000 words (free)."
+msgstr "Geben Sie Ihre E-Mail-Adresse ein, um das tägliche Limit von 500 auf 10000 Wörter zu erhöhen (kostenlos)."
+
+#: polylang-auto-translate.php:73
+msgid "MyMemory/translated.com API Key"
+msgstr "MyMemory/translated.com API-Schlüssel"
+
+#: polylang-auto-translate.php:76
+msgid "Optional: Your MyMemory API Key (if available)."
+msgstr "Optional: Ihr MyMemory API-Schlüssel (falls verfügbar)."
+
+#: polylang-auto-translate.php:104
+msgid "Translation"
+msgstr "Übersetzung"
