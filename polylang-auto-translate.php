@@ -1,9 +1,10 @@
 <?php
-/*
-Plugin Name: Polylang Auto Translator
-Description: Translates content from the original German text using MyMemory while preserving the Gutenberg structure.
-Version: 1.3.1
-Author: jado GmbH
+/**
+ * Plugin Name: Polylang Auto Translator
+ * Description: Translates content from the original language text using MyMemory/translated.com while preserving the Gutenberg structure.
+ * Version: 1.3.2
+ * Author: jado GmbH
+ * Author URI: https://www.ja.do/
 */
 
 if (!defined('ABSPATH')) exit;
@@ -38,11 +39,11 @@ class Polylang_Translator {
 
     public function add_settings_page() {
         add_options_page(
-            __('Polylang Auto Translate Settings', 'polylang-auto-translate'),
-            __('Polylang Auto Translate', 'polylang-auto-translate'),
-            'manage_options',
-            'pll-ai-translate',
-            [$this, 'render_settings_page']
+                __('Polylang Auto Translate Settings', 'polylang-auto-translate'),
+                __('Polylang Auto Translate', 'polylang-auto-translate'),
+                'manage_options',
+                'pll-ai-translate',
+                [$this, 'render_settings_page']
         );
     }
 
@@ -99,12 +100,12 @@ class Polylang_Translator {
 
         foreach ($post_types as $screen) {
             add_meta_box(
-                'pll_translator_box',
-                __('Translation', 'polylang-auto-translate'),
-                [$this, 'render_meta_box'],
-                $screen,
-                'side',
-                'high'
+                    'pll_translator_box',
+                    __('Translation', 'polylang-auto-translate'),
+                    [$this, 'render_meta_box'],
+                    $screen,
+                    'side',
+                    'high'
             );
         }
     }
@@ -254,8 +255,8 @@ class Polylang_Translator {
         }
 
         wp_send_json_success([
-            'title' => $translated_title,
-            'content' => $translated_content
+                'title' => $translated_title,
+                'content' => $translated_content
         ]);
     }
 
@@ -388,8 +389,8 @@ class Polylang_Translator {
             }
 
             $response = wp_remote_get($url, [
-                'timeout' => 30,
-                'sslverify' => false
+                    'timeout' => 30,
+                    'sslverify' => false
             ]);
 
             if (is_wp_error($response)) {
