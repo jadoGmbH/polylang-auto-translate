@@ -38,8 +38,8 @@ class Polylang_Translator {
 
     public function add_settings_page() {
         add_options_page(
-            __('Polylang AI Translate Settings', 'polylang-auto-translate'),
-            __('Polylang AI Translate', 'polylang-auto-translate'),
+            __('Polylang Auto Translate Settings', 'polylang-auto-translate'),
+            __('Polylang Auto Translate', 'polylang-auto-translate'),
             'manage_options',
             'pll-ai-translate',
             [$this, 'render_settings_page']
@@ -54,7 +54,7 @@ class Polylang_Translator {
     public function render_settings_page() {
         ?>
         <div class="wrap">
-            <h1><?php _e('Polylang AI Translate Settings', 'polylang-auto-translate'); ?></h1>
+            <h1><?php _e('Polylang Auto Translate Settings', 'polylang-auto-translate'); ?></h1>
             <form method="post" action="options.php">
                 <?php
                 settings_fields('pll_ai_translate_settings');
@@ -62,14 +62,14 @@ class Polylang_Translator {
                 ?>
                 <table class="form-table">
                     <tr valign="top">
-                        <th scope="row"><?php _e('MyMemory Email', 'polylang-auto-translate'); ?></th>
+                        <th scope="row"><?php _e('MyMemory/translated.com Email', 'polylang-auto-translate'); ?></th>
                         <td>
                             <input type="email" name="pll_ai_translate_email" value="<?php echo esc_attr(get_option('pll_ai_translate_email')); ?>" class="regular-text" />
                             <p class="description"><?php _e('Enter your email address to increase the daily limit from 1,000 to 10,000 words (free).', 'polylang-auto-translate'); ?></p>
                         </td>
                     </tr>
                     <tr valign="top">
-                        <th scope="row"><?php _e('MyMemory API Key', 'polylang-auto-translate'); ?></th>
+                        <th scope="row"><?php _e('MyMemory/translated.com API Key', 'polylang-auto-translate'); ?></th>
                         <td>
                             <input type="text" name="pll_ai_translate_key" value="<?php echo esc_attr(get_option('pll_ai_translate_key')); ?>" class="regular-text" />
                             <p class="description"><?php _e('Optional: Your MyMemory API Key (if available).', 'polylang-auto-translate'); ?></p>
