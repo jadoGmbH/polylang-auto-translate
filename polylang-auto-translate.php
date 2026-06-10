@@ -65,7 +65,7 @@ class Polylang_Translator {
                         <th scope="row"><?php _e('MyMemory/translated.com Email', 'polylang-auto-translate'); ?></th>
                         <td>
                             <input type="email" name="pll_ai_translate_email" value="<?php echo esc_attr(get_option('pll_ai_translate_email')); ?>" class="regular-text" />
-                            <p class="description"><?php _e('Enter your email address to increase the daily limit from 1,000 to 10,000 words (free).', 'polylang-auto-translate'); ?></p>
+                            <p class="description"><?php _e('Enter your email address to increase the daily limit from 500 to 10000 words (free).', 'polylang-auto-translate'); ?></p>
                         </td>
                     </tr>
                     <tr valign="top">
